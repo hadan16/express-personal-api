@@ -13,3 +13,21 @@
 //   console.log("Created new campsite", campsite._id)
 //   process.exit(); // we're all done! Exit the program.
 // })
+
+
+var mongoose = require("mongoose");
+  Schema = mongoose.Schema;
+
+//new quote schema
+var QuoteSchema = new Schema({
+  phrase: String,
+  person: String,
+  topic: String
+});
+
+//variable of new model
+var Quote = mongoose.model('Quote', QuoteSchema);
+
+
+//quote model export
+module.exports = Quote;

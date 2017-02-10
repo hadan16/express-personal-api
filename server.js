@@ -42,6 +42,27 @@ app.get('/', function homepage(req, res) {
  * JSON API Endpoints
  */
 
+ app.get('/api/quotes', function(req, res){
+   var quote = {
+     phrase: "lifes simple, make choices, dont look back",
+     person: "Kevin Kuo",
+     topic: "life"
+   };
+
+   res.send({
+     data: [quote]
+   })
+ })
+
+
+
+
+
+
+
+
+
+
 app.get('/api', function apiIndex(req, res) {
   // TODO: Document all your api endpoints below as a simple hardcoded JSON object.
   // It would be seriously overkill to save any of this to your database.
@@ -57,6 +78,16 @@ app.get('/api', function apiIndex(req, res) {
     ]
   })
 });
+
+
+
+
+
+
+
+
+
+
 
 /**********
  * SERVER *
