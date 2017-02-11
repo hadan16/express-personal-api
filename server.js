@@ -19,7 +19,8 @@ app.use(function(req, res, next) {
  * DATABASE *
  ************/
 
-// var db = require('./models');
+var db = require('./models');
+var Quote = db.Quote;
 
 /**********
  * ROUTES *
@@ -43,20 +44,23 @@ app.get('/', function homepage(req, res) {
  */
 
  app.get('/api/quotes', function(req, res){
-   var quote = {
-     phrase: "lifes simple, make choices, dont look back",
-     person: "Kevin Kuo",
-     topic: "life"
-   };
-
-   res.send({
-     data: [quote]
-   })
+   db.Quote.find({}, function(err, allTheQuotes){
+     res.send({
+     data: allTheQuotes
+   });
  })
+ });
 
 
 
-
+//  // get all books
+// app.get('/api/quotes', function (req, res) {
+//   // send all books as JSON response
+//   console.log('quotes index');
+//   res.json(quotes); //capital Quotes?
+// });
+//
+//
 
 
 
