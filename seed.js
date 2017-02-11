@@ -50,10 +50,9 @@ var quotes_list = [
     topic: "lidsfasdffe"
   },
   {
-    title: "Romeo and Juliet",
-    author: "William Shakespeare",
-    image: "https://s3-us-west-2.amazonaws.com/sandboxapi/romeo_and_juliet.jpg",
-    releaseDate: "Unknown 1597"
+    phrase: "phrase number 3",
+    person: "person 3",
+    topic: "another-topic"
   }
 ];
 
