@@ -45,7 +45,7 @@ app.get('/', function homepage(req, res) {
 
  app.get('/api/quotes', function(req, res){
    db.Quote.find({}, function(err, allTheQuotes){
-     res.send({
+     res.json({
      data: allTheQuotes
    });
  })

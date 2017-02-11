@@ -19,11 +19,11 @@ var Quote = db.Quote;
 
 
 //not sure what the purpose of this is if its already in server.js
-var kevin = {
-  phrase: "lifes simple, make choices, dont look back",
-  person: "Kevin Kuo",
-  topic: "life"
-};
+// var kevin = {
+//   phrase: "lifes simple, make choices, dont look back",
+//   person: "Kevin Kuo",
+//   topic: "life"
+// };
 
 Quote.create()
 
