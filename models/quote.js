@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 
 var QuoteSchema = new Schema({
   phrase: String,
-  person: String,
+  author: String,
   topic: String
 });
 
