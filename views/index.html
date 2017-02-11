@@ -6,7 +6,7 @@
   <!-- set viewport to device width to help make site responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Spotify Search</title>
+  <title>Quotes</title>
 
   <!-- bootstrap css -->
   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -31,13 +31,19 @@
         <div id="results"></div>
       </div>
     </div>
-    <div class="row button text-center">
+    <!-- <div class="row button text-center">
       <input id="enter-search" type="text">
-    </div>
+    </div> -->
 
-    <div class="row text-center">
-      <button id="search-button" class="btn-default">Search</button>
-    </div>
+    <form>
+    	<label for "quote">Enter Quote</label>
+    	<input type="text">
+    	<label for "author">Enter Author</label>
+    	<input type="text">
+    	<label for "topic">Enter Topic</label>
+    	<input type="text">
+      <button id="submit-button" class="btn-default">Submit</button>
+    </form>
 
     <!-- sample new section below-->
       <!-- <div class="row result">
