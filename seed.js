@@ -35,19 +35,19 @@ var db = require('./models');
 
 var quotes_list = [
   {
-    phrase: "lifes simple, make choices, dont look back",
-    person: "Kevin Kuo",
-    topic: "life"
+    phrase: "sample quote 1",
+    author: "author 1",
+    topic: "topic 1"
   },
   {
-    phrase: "lifesdfasdfasdok back",
-    person: "Kevisdfasdfo",
-    topic: "lidsfasdffe"
+    phrase: "sample quote 2",
+    author: "author 2",
+    topic: "topic 2"
   },
   {
-    phrase: "phrase number 3",
-    person: "person 3",
-    topic: "another-topic"
+    phrase: "sample quote 3",
+    author: "author 3",
+    topic: "topic 3"
   }
 ];
 
